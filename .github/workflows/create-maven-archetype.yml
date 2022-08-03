@@ -15,6 +15,6 @@ jobs:
       - name: Create archetype using maven command
         run: 'mvn archetype:create-from-project'
       - name: Change working directory to archetype directory
-      - run: 'cd target/generated-sources/archetype/'
+        run: 'cd target/generated-sources/archetype/'
       - name: Deploy archetype to Github maven package repository
         run: 'mvn deploy'
