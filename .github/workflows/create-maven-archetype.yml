@@ -18,4 +18,7 @@ jobs:
       - name: Change working directory to archetype directory
         run: 'cd target/generated-sources/archetype/'
       - name: Deploy archetype to Github maven package repository
+        env:
+          GITHUB_TOKEN: ${{ secrets.MAVEN_PACKAGE }} # GITHUB_TOKEN is the default env for the password
         run: 'mvn deploy'
+
