@@ -71,4 +71,11 @@
       </plugins>
     </pluginManagement>
   </build>
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>Javed Halani Archetypes</name>
+      <url>https://maven.pkg.github.com/javedhalani/archetypes</url>
+    </repository>
+  </distributionManagement>
 </project>
